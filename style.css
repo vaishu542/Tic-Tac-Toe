@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family:"Permanent Marker",cursive;
+    background-color: #d8e0eb
+}
+.btns{
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+.btn{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 4rem;
+    font-family:"Permanent Marker",cursive;
+    border:2px solid #969393;
+    background-color: #f0f6f7;
+}
+h1{
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+#reset{
+    font-size: 2rem;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-family:"Permanent Marker",cursive ;
+    border:2px solid #969393;
+    background-color: 	#fffdfd;
+}
+#reset:hover{
+    background-color: 	#eceaea;
+    border:2px solid #726f6f;
+}
+#player{
+    font-size: 2rem;
+}
+
+.btn.winner {
+    background-color: #a9ecb9; 
+    border-color: #6d6b6b;
+}
+
+@media screen and (max-width: 768px) {
+    .btn{
+        height: 80px;
+        width: 80px;
+        font-size: 3rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    #reset{
+        font-size: 1.8rem;
+        padding: 3px 18px;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 500px) {
+    .btn{
+        height: 65px;
+        width: 65px;
+        font-size: 2.5rem;
+    }
+    .btns{
+        grid-gap: 12px;
+    }
+    h1{
+        font-size: 2.6rem;
+    }
+    #reset{
+        font-size: 1.8rem;
+        padding: 3px 18px;
+    }
+  }
+  @media screen and (max-width: 330px) {
+    .btn{
+        height: 55px;
+        width: 55px;
+        font-size: 2.3rem;
+    }
+    .btns{
+        grid-gap: 10px;
+    }
+    h1{
+        font-size: 2.4rem;
+    }
+    #reset{
+        font-size: 1.5rem;
+        padding: 3px 18px;
+    }
+    #player{
+        font-size: 1.7rem;
+    }
+  }
